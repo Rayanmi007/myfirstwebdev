@@ -1,0 +1,247 @@
+/* reset all the margin and padding */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navList {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.navList li {
+    padding: 20px 30px;
+    list-style: none;
+}
+
+.navList li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navList li a:hover {
+    color: gray;
+}
+
+.rightNav {
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+.logo {
+    width: 9%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px 5px 20px;
+    cursor: pointer;
+}
+
+.logo img {
+    border: 2px solid rgb(245, 229, 229);
+    border-radius: 50%;
+}
+
+#search {
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgba(245, 245, 245, 0.082);
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(/img/19420.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.boxmain {
+    margin: auto;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first-section {
+    justify-items: center;
+    display: flex;
+    height: 30rem;
+    align-items: center;
+}
+
+.fhalf {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shalf {
+    width: 30%;
+}
+
+.shalf img {
+    width: 70%;
+    height: 70%;
+    border: 4px solid white;
+    border-radius: 70%;
+    margin: auto 20px;
+}
+
+.smalltxt {
+    font-size: 34px;
+}
+
+.bigtxt {
+    font-size: 18px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: rgba(128, 128, 128, 0.212);
+}
+
+.btn-sm {
+    border: 1px solid white;
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.section {
+    width: 90%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.thumbnail img {
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.para {
+    padding: 0 20px;
+}
+
+.tag,
+.subtag {
+    color: black;
+}
+
+.subtag {
+    font-family: 'EB Garamond', serif;
+    font-size: medium;
+}
+
+#services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.contact {
+    background-color: rgb(230, 227, 227);
+    height: 80vh;
+}
+
+.contact-txt {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+
+.contactdiv {
+    max-width: 344px;
+    margin: auto;
+}
+
+.contactdiv input {
+    width: 100%;
+}
+
+.form {
+    max-width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.contactdiv label {
+    color: black;
+}
+
+.btndark {
+    border: 2px solid black;
+    color: black;
+}
+
+.footer-txt {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* media query */
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px
+}
+
+.line {
+    width: 33px;
+    background: white;
+    height: 4px;
+    margin: 5px 3px;
+}

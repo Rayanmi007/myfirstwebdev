@@ -1,0 +1,71 @@
+@media only screen and (max-width:1106px) {
+    .navList {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .navbar {
+        height: 430px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav {
+        text-align: center;
+        transition: all 0.7s ease-out;
+    }
+    .boxmain {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .shalf {
+        text-align: center;
+    }
+    .shalf img {
+        width: 70%;
+        height: 70%;
+        border-radius: 10px;
+    }
+    .first-section {
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .btn-resp {
+        border: 2px solid white;
+        margin: 15px 2px 5px 5px;
+        padding: 5px;
+        font-size: 75%;
+        font-weight: bold;
+    }
+    .smalltxt {
+        text-align: center;
+        font-size: 28px;
+    }
+    .bigtxt {
+        font-size: 14px;
+    }
+    .section {
+        height: 35rem;
+        flex-direction: column-reverse;
+    }
+    .first-section {
+        height: 35rem;
+    }
+    .contact {
+        height: 55vh;
+    }
+    #search {
+        width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .nav-hight {
+        height: 60px;
+    }
+    .v-class {
+        opacity: 0;
+    }
+    .logo {
+        width: 50px;
+    }
+}

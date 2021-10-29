@@ -1,0 +1,17 @@
+    /* parents default setting Or CSS Variable */
+    /* :root {
+        --navbar-hight: 50px;
+        background-color: black;
+        color: white;
+    }
+     */
+    
+    #container {
+        display: block;
+        flex-direction: column;
+    }
+    
+    #container img {
+        display: block;
+        position: fixed;
+    }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Bonheur Royale', 'cursive';
+            font-size: 20px;
+            box-sizing: 48px;
+        }
+
+        .container {
+            background-color: lightcyan;
+            width: 900px;
+            border: 3px solid blue;
+            margin: 30px auto;
+
+        }
+
+        .item {
+            border: 3px solid black;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: blanchedalmond;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 45%;
+        }
+
+        #mobiles {
+            clear: left;
+            /* float: left; */
+            width: 98%;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(16, 17, 16);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="frpara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate libero eum iure neque. A numquam
+                earum officia quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, atque quo
+                tempora eligendi voluptates soluta inventore repudiandae aliquid sed dignissimos vel, totam voluptatum
+                est nobis cumque nemo explicabo quidem tempore sapiente cupiditate omnis beatae. Adipisci, dicta!
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>COmputer</h3>
+            <p id="frpara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate libero eum iure neque. A numquam
+                earum officia quibusdam. Adipisci, dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                provident fugit, sit iure asperiores, earum voluptatibus minus laborum, dolore et omnis! Dicta corporis
+                dolore saepe sed hic iusto soluta ipsa.
+            </p>
+        </div>
+        <div id="mobiles" class="item">
+            <h3>Mobiles</h3>
+            <p id="frpara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate libero eum iure neque. A numquam
+                earum officia quibusdam. Adipisci, dicta!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

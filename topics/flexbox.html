@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<style>
+    .container {
+        height: 544px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        /* felx properties for container */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* flex-flow: row wrap; */
+        /* justify-content: center; */
+        /* justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+
+    }
+
+    .item {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 3px;
+    }
+
+    /* flex properties for items */
+    #item1 {
+        /* heigher the order later shown in container */
+        /* order: 1; */
+        /* flex-grow: 3; */
+        /* flex-shrink: 1; */
+        /* flex flex-basis:  control width when flex direction is set to row */
+        /* flex flex-basis:  control height when flex direction is set to column */
+        /* flex-basis: 320px; */
+        /* flex: 2 2 164px; */
+        /* align-self: flex-end; */
+        align-self: flex-start;
+        /* align-self: center; */
+    }
+</style>
+
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div>
+    </div>
+</body>
+
+</html>

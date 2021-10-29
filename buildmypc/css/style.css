@@ -1,0 +1,149 @@
+body {
+    height: 1400px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('/img/bg3.png');
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 0px;
+    border: 1px solid rgb(253, 9, 9);
+    margin: 18px auto;
+}
+
+.left img {
+    width: 60px;
+}
+
+.mid {
+    display: block;
+    width: 50%;
+    margin: 18px auto;
+    border: 1px solid rgb(23, 204, 32);
+    padding: 0px 7px;
+}
+
+.right {
+    border-radius: 20px;
+    width: 20%;
+    position: absolute;
+    right: 34px;
+    top: 0px;
+    display: inline-block;
+    border: 0.5px solid rgb(255, 255, 255);
+    margin: 23px auto;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 2px 15px;
+}
+
+.search {
+    padding: 4px 55px;
+    float: left;
+    color: rgb(252, 250, 250);
+    background: transparent;
+    width: 102px;
+}
+
+.search:hover {
+    color: rgb(253, 4, 191);
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    color: chartreuse;
+    text-decoration: underline;
+}
+
+.right img {
+    top: 9px;
+    width: 23px;
+    position: absolute;
+    right: 14px;
+    cursor: pointer;
+}
+
+.search {
+    border-color: transparent;
+}
+
+.fcont {
+    position: fixed;
+    border: 2px solid cornsilk;
+    margin: 50px 90px;
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.fcont h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.fcont button {
+    margin: 20px 9px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 15px;
+    display: inline;
+}
+
+.fcont button:hover {
+    color: rgb(234, 0, 255);
+    background-color: rgba(211, 211, 211, 0.116);
+}
+
+.reg {
+    display: block;
+    width: 50%;
+    margin: 18px auto;
+    padding: 0px 7px;
+}
+
+.form-group input {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 220px;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 3px auto;
+    font-size: 14px;
+}
+.form-group input:hover,.form-group input:active{
+    border: 1px solid rgb(255, 0, 255);
+}
+.robot {
+    text-align: center;
+    margin: 14px auto;
+    display: block;
+    color: thistle;
+    font-size: 11px;
+}
+
+.robot:hover {
+    color: violet;
+}

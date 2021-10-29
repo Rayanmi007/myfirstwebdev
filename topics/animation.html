@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container {
+        background-color: wheat;
+    }
+
+    .box {
+        background-color: violet;
+        width: 90px;
+        height: 90px;
+        position: relative;
+        /* animation-name: manga;
+        animation-name: manga2;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+        /* animation-direction: alternate-reverse; */
+        /* animation: name duration timing-function delay; */
+        animation: manga2 5s ease-in 2;
+    }
+
+    @keyframes manga2 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 100px;
+            left: 0px;
+        }
+
+        50% {
+            top: 250px;
+            left: 100px;
+        }
+
+        75% {
+            top: 500px;
+            left: 200px;
+        }
+
+        100% {
+            top: 0px;
+            left: 500px;
+        }
+    }
+
+    @keyframes manga {
+        from {
+            width: 0px;
+
+        }
+
+        to {
+            width: 400px;
+
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

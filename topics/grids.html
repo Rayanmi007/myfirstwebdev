@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+</head>
+<style>
+    @media (min-width:200px) and (max-width:400px)
+    {
+        body{
+            background-color: coral;
+        }
+    }
+    @media (min-width:400px) and (max-width:600px)
+    {
+        body{
+            background-color: rgb(10, 255, 84);
+        }
+        .container{
+        grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside '
+            'footer footer footer footer';}
+    }
+    @media (min-width:600px) and (max-width:800px)
+    {
+        body{
+            background-color: rgb(250, 6, 6);
+        }
+    }
+    @media (min-width:800px) and (max-width:1000px)
+    {
+        body{
+            background-color: rgb(7, 23, 248);
+        }
+        .container{
+        grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside '
+            'footer footer footer footer';}
+            .navbar{
+                display: none;
+            }
+    }
+    .grid {
+        display: grid;
+        grid-gap: 1rem;
+        /* grid-template-columns: 300px 100px  auto; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: 1fr 4fr 2fr; */
+        /* grid-template-columns: repeat(5, 1fr); */
+        /* grid-template-rows: repeat(4,1fr); */
+        /* grid-auto-rows: 2fr; */
+        /* justify-content: center; */
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) ); */
+        grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    /* .box {
+        height: 100px;
+    width: 100px;
+        margin: 3px;
+        padding: 20px;
+        background-color: rgb(176, 161, 228);
+        border: 2px solid black;
+    } */
+    .item {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: blanchedalmond;
+    }
+
+    /* .box:first-child{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; 
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+    } */
+    #navbar {
+        grid-area: navbar;
+    }
+
+    #section {
+        grid-area: section;
+    }
+
+    #aside {
+        grid-area: aside;
+    }
+    #footer {
+        text-align: center;
+        grid-area: footer;
+    }
+</style>
+
+<body>
+    <div class="grid">
+        <div id="navbar" class="item">Home About Contact</div>
+        <div id="section" class="item">Totam quis voluptatibus officia atque saepe unde iusto? Labore totam
+            doloremque sequi illo iusto dolorum sint maxime delectus praesentium aliquid! Debitis, laboriosam cum.
+            Aliquid dolor aut quisquam. quaerat aut ut non error asperiores.</div>
+        <div id="aside" class="item">Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet, qui earum aperiam
+            labore obcaecati similique tenetur? Atque, labore culpa quod repellendus sapiente ex consectetur vel, a
+            beatae deserunt eligendi!
+        </div>
+        <footer id="footer" class="item">copyright &copy; grids.com al rights are reserved</footer>
+        <!-- <div class="box">this is item-1</div>
+        <div class="box">this is item-2</div>
+        <div class="box">this is item-3</div>
+        <div class="box">this is item-4</div>
+        <div class="box">this is item-5</div>
+        <div class="box">this is item-6</div>
+        <div class="box">this is item-7</div>
+        <div class="box">this is item-8</div>
+        <div class="box">this is item-9</div>
+        <div class="box">this is item-10</div>
+        <div class="box">this is item-11</div>
+        <div class="box">this is item-12</div> -->
+    </div>
+</body>
+
+</html>

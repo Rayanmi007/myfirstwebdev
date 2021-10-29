@@ -1,0 +1,23 @@
+/* Cascading Style sheet */
+/* makes website  responsive and  add designs */
+/* syntax ==> SELECTOR { PROPERTY : VALUE} */
+/* SELECTOR */
+p{
+    /* 1. CSS ELEMENT Selector */
+    color: rgb(187, 19, 7);
+    background-color: rgb(224, 42, 42) ;
+}
+
+/* 2. CSS ID Selector */
+#second{
+    color: green;
+}
+/* 3. CSS CLASS Selector */
+.Slorem{
+    color: hotpink;
+}
+/* 4. CSS GROUPING Selector */
+span,footer{
+    background-color: indigo;
+    color: lightpink ;
+}

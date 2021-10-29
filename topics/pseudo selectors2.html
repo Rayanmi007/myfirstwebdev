@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After And Before</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: blanchedalmond;
+    }
+
+    header::before {
+        background: url("https://source.unsplash.com/1600x900/?computer,desktop,cpu") no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        opacity: 0.4;
+    }
+
+    .navi {
+        display: flex;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    li {
+        list-style: none;
+        padding: 3px 23px;
+    }
+
+    section {
+
+        height: 220px;
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* section::after/before{
+       content:"this is a content";
+    } */
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navi">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>This is paragraph</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magni praesentium cupiditate sit
+            cum exercitationem ut? Temporibus vel commodi similique, voluptates aspernatur earum! Soluta amet earum
+            placeat commodi totam beatae.</p>
+        </section>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval Set TimeOut</title>
+    <style>
+        #time{
+            color: red;
+            padding: 34px;
+            display: block;
+            background-color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">this is container
+        <span id="time"></span>
+    </div>
+    <script>
+        // setTimeout --> Allows us to run the function once after the interval 
+         // clear setTimeout --> Allows us to run the function repeatedly after the interval 
+ function greet(name, bt){
+     console.log("Hello Good Morning " + name + " "+bt);
+ }
+// let timeout=  setTimeout(greet, 5000,"Rahul","Tack Care");
+// console.log(timeout);
+// clearTimeout(timeout);
+// setTimeout(greet(),2000) ==> wrong as it is calling the function in setTime
+
+// let inter=setInterval(greet, 1000,"Rahul","Tack Care");
+// clearTimeout(inter);
+
+
+function timedisplay(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML = time;
+}
+setInterval(timedisplay, 1000)
+    </script>
+</body>
+</html>

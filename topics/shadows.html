@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+.card{
+    padding: 12px 12px;
+    margin: 23px 20px;
+    /* background: 1px solid red; */
+    /* box-shadow: -7px 5px 20px green; */
+    /* box-shadow: -7px 5px 20px 1px green; */
+    /* box-shadow: -7px 5px 5px 1px rgba(4, 2, 4, 5); */
+    box-shadow: inset -7px 5px 5px 1px rgba(4, 2, 4, 5),-7px 5px 5px 1px rgba(4, 2, 4, 5);
+    /* box-shadow: offset-X offset-Y blur-radius spread-radius color; */
+}
+.card h2{
+    color: red;
+    text-shadow: -1px 3px 1px  rgb(129, 129, 129);
+}
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+        </div>
+        <div class="card" id="card4">
+            <h2>card4</h2>
+        </div>
+    </div>
+</body>
+</html>
